@@ -35,6 +35,12 @@ h6 {
     margin: 0;
 }
 
+h1 {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 120%;
+}
+
 body {
     color: #2F3035;
     font-family: 'Whitney', sans-serif;
@@ -45,7 +51,6 @@ body {
 }
 
 .container {
-    max-width: 1200px;
-    //padding: 0 15px;
+    max-width: 1170px;
     margin: 0 auto;
 }

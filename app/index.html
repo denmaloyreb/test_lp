@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
     <header class="header">
         <div class="header__inner">
             <div class="container">
@@ -17,8 +18,8 @@
                     <div class="header__logo"><img src="img/logo.png" alt="logo"></div>
                     <nav class="header__menu">
                         <ul class="menu">
-                            <li class="menu__items"><a class="menu__link" href="#">Клиентам</a></li>
-                            <li class="menu__items"><a class="menu__link" href="#">Войти</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Клиентам</a></li>
+                            <li class="menu__item menu__item-login"><a class="menu__link" href="#">Войти</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -33,7 +34,7 @@
                         <div class="header__button"><a class="button" href="#">Регистрация</a></div>
                     </div>
                     <div class="header__info-collumn header__info-img">
-
+                        <img src="img/man.svg" alt="">
                     </div>
                 </div>
 
@@ -57,7 +58,9 @@
                                 <p>Дополнительный канал потенциальных клиентов, готовых приобрести автомобиль, без затрат на рекламу и маркетинг.</p>
                             </div>
                         </div>
-                        <div class="opportunities__item-collumn opportunities__item-img"></div>
+                        <div class="opportunities__item-collumn opportunities__item-img">
+                            <img src="img/Time.svg" alt="time">
+                        </div>
                     </div>
                     <div class="opportunities__item">
                         <div class="opportunities__item-collumn opportunities__item-text">
@@ -68,7 +71,9 @@
                                 <p>Вы получаете запросы сразу же после отправки клиентом.</p>
                             </div>
                         </div>
-                        <div class="opportunities__item-collumn opportunities__item-img"></div>
+                        <div class="opportunities__item-collumn opportunities__item-img">
+                            <img src="img/Speed.svg" alt="speed">
+                        </div>
                     </div>
                     <div class="opportunities__item">
                         <div class="opportunities__item-collumn opportunities__item-text">
@@ -79,7 +84,9 @@
                                 <p>В каждой заявке указан регион поиска, марка и модель авто, а так же индивидуальные запросы клиента.</p>
                             </div>
                         </div>
-                        <div class="opportunities__item-collumn opportunities__item-img"></div>
+                        <div class="opportunities__item-collumn opportunities__item-img">
+                            <img src="img/Information.svg" alt="information">
+                        </div>
                     </div>
                     <div class="opportunities__item">
                         <div class="opportunities__item-collumn opportunities__item-text">
@@ -90,25 +97,54 @@
                                 <p>Для каждого запроса у вас открыт чат с клиентом с возможностью отправки документов.</p>
                             </div>
                         </div>
-                        <div class="opportunities__item-collumn opportunities__item-img"></div>
+                        <div class="opportunities__item-collumn opportunities__item-img">
+                            <img src="img/Chat.svg" alt="chat">
+                        </div>
                     </div>
                 </div>
 
             </div>
         </div>
     </section>
-    <section class="registration">
-        <div class="registration__inner">
+    <footer class="footer">
+        <div class="footer__inner">
             <div class="container">
-                <div class="registration__info">
-                    <div class="registration__info-text">
-                        <p></p>
+                <div class="footer__info">
+                    <div class="footer__info-text">
+                        <p>Регистрируйся и получай актуальные запросы на автомобили от заинтерисованных клиентов</p>
+                        <div class="footer__info-button"><a class="button" href="#">Регистрация</a></div>
                     </div>
-                    <div class="registration__info-button"><a class="button" href="#">Регистрация</a></div>
+                    <div class="footer__info-img"><img src="img/cars.png" alt="cars"></div>
+
+
                 </div>
             </div>
         </div>
 
+    </footer>
+    <section class="popup">
+        <div class="popup__form-container">
+            <div class="close-btn"></div>
+            <div class="popup__form-title">
+                Авторизация
+            </div>
+
+
+            <form class="page-form" action="#">
+                <div class="page-form__name-label">
+                    E-mail
+                </div>
+                <input class="page-form__email" name="email" id="email" type="email" placeholder="Введите e-mail"> </br>
+                <div class="page-form__name-label">
+                    Пароль
+                </div>
+                <input class="page-form__password" type="password" name="password" placeholder="Введите пароль"> </br>
+
+                <input class="page-form__button" type="submit" value="Войти">
+            </form>
+
+
+        </div>
     </section>
 
 
