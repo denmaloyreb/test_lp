@@ -1,39 +1,16 @@
-//import Swiper from 'swiper/bundle';
+let login = document.querySelector('.menu__item-login');
+let popup = document.querySelector('.popup');
+let page = document.querySelector('html');
+let close = document.querySelector('.close-btn');
 
-//import Swiper, { Navigation, Pagination } from "../../node_modules/swiper/components";
-//Swiper.use([Navigation, Pagination]);
-//import Swiper from "../../node_modules/swiper/swiper-bundle.js";
-//const slider = document.querySelector('.swiper-container');
-
-//const slider = document.querySelector('.swiper-container');
-
-let mySwiper = new Swiper('.swiper-container', {
-    slidesPerView: 2,
-    spaceBetween: 10,
-    loop: true,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+login.addEventListener('click', () => {
+    //console.log("hello");
+    popup.classList.add('popup--active');
+    page.classList.add('noscroll');
 })
 
-$(function() {
-
-
-
-
-});
-
-const menuButton = document.getElementById('menuButton');
-menuButton.addEventListener('click', function(e) {
-    menuButton.classList.toggle('is-active');
-    e.preventDefault();
-});
-
-let a = 1;
-let r = "hello";
-console.log("работает!!!^ d yfneht");
+close.addEventListener('click', () => {
+    //console.log("hello");
+    popup.classList.remove('popup--active');
+    page.classList.remove('noscroll');
+})

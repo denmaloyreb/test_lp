@@ -60,6 +60,15 @@
     }
 }
 
+@media (max-width: 525px) {
+    .page-form input {
+        width: 290px;
+    }
+    .popup__form-container {
+        width: 340px;
+    }
+}
+
 @media (max-width: 498px) {
     .opportunities__item-img img {
         width: 90%;
@@ -80,5 +89,14 @@
     .footer__info-text {
         font-size: 28px;
         line-height: 30px;
+    }
+}
+
+@media (max-width: 355px) {
+    .page-form input {
+        width: 220px;
+    }
+    .popup__form-container {
+        width: 290px;
     }
 }

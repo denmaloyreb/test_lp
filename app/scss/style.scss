@@ -3,6 +3,10 @@
 @import "fonts";
 @import "burger";
 @import "global";
+.noscroll {
+    overflow-y: hidden;
+}
+
 .header {
     min-height: 700px;
     background: linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
@@ -135,7 +139,7 @@
         transition: all .5s;
     }
     &__item:hover {
-        font-weight: 600;
+        color: #FFE4E1;
     }
     &__item-login {
         padding-right: 25px;
@@ -171,11 +175,14 @@
     z-index: 100;
     position: fixed;
     top: 0;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
+    &--active {
+        display: flex;
+    }
     &__form-container {
-        min-width: 490px;
+        width: 490px;
         min-height: 472px;
         background: #FFFFFF;
         box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.25);
@@ -184,6 +191,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        position: relative;
     }
     &__form-title {
         font-weight: 600;
@@ -191,7 +199,38 @@
         line-height: 52px;
         text-align: center;
         color: #2E2D35;
+        padding-bottom: 35px;
     }
+}
+
+.close-btn {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+}
+
+.close-btn::after,
+.close-btn::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    transform-origin: left;
+}
+
+.close-btn::after {
+    transform: rotate(45deg);
+    width: 14px;
+    height: 2px;
+}
+
+.close-btn::before {
+    width: 14px;
+    height: 2px;
+    transform: rotate(-45deg);
+    bottom: 2px;
 }
 
 .page-form {
@@ -200,15 +239,29 @@
         font-size: 18px;
         line-height: 24px;
         color: #474351;
+        padding-bottom: 10px;
     }
     & input {
         width: 320px;
         height: 50px;
+        margin-bottom: 18px;
+        border: 1px solid #DDDAE7;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+    & input::placeholder {
+        font-family: 'Whitney';
+        font-style: normal;
+        font-weight: 325;
+        font-size: 16px;
+        line-height: 100%;
+        color: #918D9A;
     }
     &__button {
         background: #F25B24;
         border-radius: 4px;
-        color: #FFFFFF
+        color: #FFFFFF;
+        margin-top: 16px;
     }
 }
 
